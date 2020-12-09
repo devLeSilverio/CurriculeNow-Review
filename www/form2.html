@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form1</title>
+    <script defer src="./lib/jquery-3.3.1.min.js"></script>
+    <script defer src="./components/acao.js"></script>
+    <link rel="stylesheet" href="./css/style2.css" />
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css"/>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-4">
+          <h2 class="monte">Monte seu Currículo</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 rowDados">
+          <h4 class="monte">3.Formação Academica</h4>
+        </div>
+      </div>
+
+      <form action="form2.php" method="POST">
+        <div class="row">
+          <div class="col-md-9">
+            <label for="nm_curso" class="campo">Curso:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="nm_curso"
+              placeholder="Ex.Ensino Técnico Integardo ao Médio"
+            />
+          </div>
+          <div class="col-md-3">
+            <label for="dt_ano_conclusao" class="campo"
+              >Ano de Conclusão:</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              name="dt_ano_conclusao"
+              placeholder="Ex.2020"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-9">
+            <label for="nm_instituicao" class="campo">Instituição:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="nm_instituicao"
+              placeholder="Ex,: ETEC de Peruíbe"
+            />
+          </div>
+          <div class="col-md-3 mt-4">
+            <button type="button" class="btn btn-success" id="addCurso">
+              + Add outro curso
+            </button>
+          </div>
+        </div>
+
+        <hr />
+        <div class="row">
+          <div class="col-md-12 rowDados">
+            <h4 class="monte">Experiência</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <label for="nm_empresa" class="campo">Empresa:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="nm_empresa"
+              placeholder="Ex.:Bradesco"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="cargo" class="campo">Cargo:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="cargo"
+              placeholder="Ex.:Professor..."
+            />
+          </div>
+          <div class="col-md-3">
+            <label for="dt_inicio" class="campo">Início em: </label>
+            <input
+              type="text"
+              class="form-control"
+              name="dt_inicio"
+              placeholder="Ex.:2019"
+            />
+          </div>
+          <div class="col-md-3">
+            <label for="dt_fim" class="campo">Fim em: </label>
+            <input
+              type="text"
+              class="form-control"
+              name="dt_fim"
+              placeholder="Ex.:2020"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-9">
+            <label for="funcao_cargo" class="campo"
+              >Descrição das suas principais funções na empresa:
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              name="funcao_cargo"
+              placeholder="Ex.:Lavava,cozinhava..."
+            />
+          </div>
+          <div class="col-md-3 mt-4">
+            <button type="button" class="btn btn-success" id="addExperiencia">
+              + Add outra Experiência
+            </button>
+          </div>
+        </div>
+
+        <br />
+        <div class="row">
+          <div class="col-md-6 offset-3">
+            <input
+              type="submit"
+              class="btn btn-primary btn-block"
+              name="next"
+              value="Finalizar ➤"
+              id="next2"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

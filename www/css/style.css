@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  background-color:rgb(233, 233, 247); 
+  border-radius: 30px;
+}
+
+.login{
+  background-color: rgb(159, 159, 252);
+  border-radius: 30px;
+  border: 2px solid rgb(77, 77, 255);
+}
+
+#img{
+  margin-left:35vh;
+  margin-top: -10vh;
+}
+
+#forgot{
+  margin-bottom:-4vh; 
+
+}
+
+label{
+  font-family:Roboto; 
+  font-weight: bold;
+}
+
+input[type='submit']{
+border-radius: 20px;
+font-weight: bold
+}
+
+
+#forgot{
+  color:rgb(79, 79, 231);
+  font-weight: bold;
+}
+
+h1{
+font-family: 'Franklin Gothic Medium';
+
+}
+
+#icon{
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}

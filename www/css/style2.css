@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  border: none;
+}
+
+body {
+  background-image: url('/imgs/fundo.jpg');
+  background-size: cover;
+  background-position-y: -200px;
+}
+
+.rowDados {
+  background-color: rgb(105, 224, 245);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 40px;
+}
+
+.monte {
+  margin: 10px 0 7px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+#next,
+#next2 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+#next:hover {
+  background-color: #1b223c;
+}
+
+#addCurso {
+  margin-top: 1vh;
+  margin-left: 3vh;
+  border-radius: 30px;
+}
+
+#addExperiencia {
+  border-radius: 30px;
+  margin-top: 1vh;
+}
+
+label {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+hr {
+  background: rgb(0, 174, 255);
+}
+
+#file {
+  margin-top: 4px;
+}
+
+.icon2 {
+  color: red;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.titleEmail,
+.idade,
+.genero,
+.nacionalidade,
+.ec,
+.estadoC,
+.telefoneR,
+.state,
+.cidade,
+.celular,
+.endereco,
+.cep,
+.complemento,
+.logradouro {
+  margin-top: 4px;
+}
+
+.tracinho {
+  background-color: rgb(162, 162, 243);
+  border-radius: 12px;
+}
+
+.objetivo {
+  border: 4px solid black;
+}
+
+@media (max-width: 600px) {
+  #addCurso {
+    margin-left: 20vh;
+  }
+  #addExperiencia {
+    margin-left: 15vh;
+  }
+  #next2 {
+    margin-right: -10vh;
+    font-size: 2vh;
+  }
+}

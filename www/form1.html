@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form1</title>
+    <script defer src="./lib/jquery-3.3.1.min.js"></script>
+    <script defer src="./components/acao.js"></script>
+    <link rel="stylesheet" href="./css/style2.css" />
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+       <center><h2 class="monte">Monte seu Currículo</h2></center>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 rowDados">
+          <h4 class="monte">1.Dados Pessoais</h4>
+        </div>
+      </div>
+      <form>
+        <div class="row">
+          <div class="col-md-7">
+            <label for="name" class="titleName">Nome Completo:</label>
+            <span class="icon2">*</span>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              placeholder="Entre com seu nome"
+            />
+          </div>
+          <div class="col-md-4 foto">
+            <label for="foto" class="title2">Escolha uma foto:</label>
+            <span class="icon2">*</span>
+            <input type="file" class="custom-file-inputid=" file" name="foto" alt="Insira uma foto" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <label for="email" class="titleEmail">Email:</label>
+            <span class="icon2">*</span>
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              placeholder="Entre com seu email"
+            />
+          </div>
+          <div class="col-md-4 nacionalidade">
+            <label for="nacao" class="nacao">Pais de Origem:</label>
+            <span class="icon2">*</span>
+            <select class="form-control" name="nacao">
+              <option>Brasil</option>
+              <option>Argentina</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 idade">
+            <label for="age" class="idade">Idade :</label>
+            <span class="icon2">*</span>
+            <input type="number" class="form-control" name="age" />
+          </div>
+          <div class="col-md-4 genero">
+            <label for="genero" class="genero">Gênero:</label>
+            <span class="icon2">*</span>
+            <select class="form-control" name="genero">
+              <option>Feminino</option>
+              <option>Masculino</option>
+              <option>Não Binário</option>
+            </select>
+          </div>
+          <div class="col-md-2 estadoC">
+            <label for="ec" class="ec">Estado Civil:</label>
+            <span class="icon2">*</span>
+            <select class="form-control" name="ec">
+              <option>Casado</option>
+              <option>Solteiro</option>
+              <option>Divorciado</option>
+              <option>Viuvo</option>
+            </select>
+          </div>
+          <div class="col-md-4 telefoneR">
+            <label for="telefoneR" class="telefoneR"
+              >Telefone residencial:
+            </label>
+            <input type="number" class="form-control" name="telefoneR" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 cidade">
+            <label for="cidade" class="cidade">Cidade :</label>
+            <span class="icon2">*</span>
+            <input type="text" class="form-control" name="cidade" />
+          </div>
+
+          <div class="col-md-2 state">
+            <label for="estado" class="state">Estado:</label>
+            <span class="icon2">*</span>
+            <select class="form-control" name="state">
+              <option>São Paulo</option>
+              <option>Rorraima</option>
+              <option>Rio de Janeiro</option>
+              <option>Minas Gerais</option>
+            </select>
+          </div>
+          <div class="col-md-4 celular">
+            <label for="celular" class="celular">Telefone celular: </label>
+            <input type="text" class="form-control" name="celular" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 endereco">
+            <label for="endereco" class="endereco"
+              >Endereço(Bairro) :</label
+            >
+            <span class="icon2">*</span>
+            <input type="text" class="form-control" name="endereco" />
+          </div>
+
+          <div class="col-md-6 logradouro">
+            <label for="logradouro" class="logradouro"
+              >Endereço(Rua e Numero) :</label
+            >
+            <span class="icon2">*</span>
+            <input type="text" class="form-control" name="logradouro" />
+          </div>
+        </div>
+          <div class="row">
+          <div class="col-md-4 complemento">
+            <label for="complemento" class="complemento">Complemento :</label>
+            <input type="text" class="form-control" name="complemento" />
+          </div>
+          <div class="col-md-4 cep">
+            <label for="cep" class="cep">CEP :</label>
+            <span class="icon2">*</span>
+            <input type="text" class="form-control" name="cep" />
+          </div>
+        </div>
+        <br />
+        <hr />
+        <div class="row">
+          <div class="col-md-12 rowDados">
+            <h4 class="monte">2.Objetivo</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <label for="objetivo">Objetivo:</label>
+            <textarea class="form-control" name="objetivo" rows="3"></textarea>
+          </div> 
+        </div>
+        <br />
+        <div class="row">
+        <div class="col-md-6 ofsset-3">
+           <input
+              type="submit"
+              class="btn btn-primary btn-block"
+              name="next"
+              value="Next ➤"
+              id="next"
+            />
+         </div>   
+        </div>
+      </form>
+    </div>
+</body>
+</html>
+
+
